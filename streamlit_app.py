@@ -1,9 +1,15 @@
 import streamlit as st
+import gcsa
 
 st.title("Calendar")
 st.write(
     "Have a question about coding? Book time with Feng and Aine!")
 
+from gcsa.event import Event
+from gcsa.google_calendar import GoogleCalendar
+from gcsa.recurrence import Recurrence, DAILY, SU, SA
+
+from beautiful_date import Jan, Apr
 import calendar
 from datetime import datetime
 
